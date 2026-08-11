@@ -1,0 +1,197 @@
+:root {
+  --bg: #fbfaf7;
+  --fg: #1c1a17;
+  --muted: #6b655c;
+  --line: #ded8cd;
+  --accent: #8a6a3d;
+  --error: #a32b2b;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #171614;
+    --fg: #ece8e1;
+    --muted: #a09a90;
+    --line: #34302a;
+    --accent: #d0a668;
+    --error: #ef8a8a;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Any element given its own `display` would otherwise ignore the hidden attribute. */
+[hidden] {
+  display: none !important;
+}
+
+body {
+  margin: 0;
+  padding: 2rem 1.5rem 4rem;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+main {
+  max-width: 68rem;
+  margin: 0 auto;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  letter-spacing: -0.01em;
+}
+
+header p {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+}
+
+h2 {
+  margin: 0 0 0.6rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+#dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 3.5rem 1.5rem;
+  border: 2px dashed var(--line);
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+#dropzone:hover,
+#dropzone:focus-within,
+#dropzone.is-dragging {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 7%, transparent);
+}
+
+#dropzone span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+kbd {
+  padding: 0.05em 0.35em;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font-family: ui-monospace, monospace;
+  font-size: 0.85em;
+}
+
+/* The label is the click target, so the input itself only needs to stay reachable. */
+#file {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+
+#status,
+#error {
+  margin: 1rem 0 0;
+}
+
+#error {
+  color: var(--error);
+}
+
+/* The board gets the full width; the source image sits underneath it for reference. */
+#result {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+#board {
+  min-width: 0;
+  max-width: 44rem;
+}
+
+aside {
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+}
+
+aside img {
+  display: block;
+  max-width: min(100%, 26rem);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.25rem;
+}
+
+button {
+  padding: 0.6rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--fg);
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+button[data-done] {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+#error-offer {
+  color: var(--muted);
+}
+
+/*
+ * Set apart from the page rather than tucked under `main`, which is capped at a reading
+ * width — the footer belongs to the window, and centring it on the text column instead
+ * leaves it hanging oddly to one side on a wide screen.
+ */
+footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+a {
+  color: inherit;
+  text-decoration-color: var(--line);
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  color: var(--accent);
+  text-decoration-color: currentcolor;
+}

@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Training data: large, and rebuilt by `pnpm dataset` from the fixtures and the generator.
+dataset/
+
+# How each fixture last scored. A readout between runs, not a commitment.
+.fixture-scores.json

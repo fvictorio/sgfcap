@@ -1,0 +1,302 @@
+{
+  "13x13": {
+    "predates": true
+  },
+  "2026-08-11_14-37": {
+    "predates": true
+  },
+  "2026-08-11_14-45": {
+    "predates": true
+  },
+  "2026-08-11_14-47": {
+    "predates": true
+  },
+  "2026-08-11_15-26": {
+    "predates": true
+  },
+  "2026-08-11_15-44": {
+    "predates": true
+  },
+  "2026-08-11_15-47_1": {
+    "predates": true
+  },
+  "2026-08-11_15-52": {
+    "predates": true
+  },
+  "2026-08-11_15-57": {
+    "predates": true
+  },
+  "2026-08-11_15-59": {
+    "predates": true
+  },
+  "2026-08-11_16-02": {
+    "predates": true
+  },
+  "2026-08-11_16-37": {
+    "predates": true
+  },
+  "2026-08-11_16-48_1": {
+    "predates": true
+  },
+  "2026-08-11_16-50": {
+    "predates": true
+  },
+  "2026-08-11_16-58": {
+    "predates": true
+  },
+  "2026-08-12_22-56_1": {
+    "predates": true
+  },
+  "2026-08-12_23-02_1": {
+    "predates": true
+  },
+  "2026-08-12_23-07": {
+    "predates": true
+  },
+  "2026-08-12_23-42": {
+    "predates": true
+  },
+  "2026-08-12_23-43_1": {
+    "predates": true
+  },
+  "2026-08-13_16-40_1": {
+    "predates": true
+  },
+  "2026-08-13_16-43": {
+    "predates": true
+  },
+  "2026-08-13_16-45": {
+    "predates": true
+  },
+  "2026-08-13_17-06": {
+    "predates": true
+  },
+  "2026-08-13_17-09": {
+    "predates": true
+  },
+  "2026-08-13_17-11": {
+    "predates": true
+  },
+  "2026-08-13_17-22": {
+    "predates": true
+  },
+  "2026-08-13_17-52": {
+    "predates": true
+  },
+  "2026-08-14_10-29": {
+    "predates": true
+  },
+  "2026-08-14_10-32": {
+    "predates": true
+  },
+  "2026-08-14_10-33": {
+    "predates": true
+  },
+  "2026-08-14_10-34": {
+    "predates": true
+  },
+  "2026-08-14_10-34_1": {
+    "predates": true
+  },
+  "2026-08-14_10-36": {
+    "predates": true
+  },
+  "2026-08-14_10-42": {
+    "on": "2026-08-15",
+    "scores": {
+      "matcher": 1,
+      "classifier": 1
+    }
+  },
+  "2026-08-14_10-43": {
+    "on": "2026-08-15",
+    "scores": {
+      "matcher": 0.5385,
+      "classifier": 0.5128
+    }
+  },
+  "2026-08-14_10-45": {
+    "on": "2026-08-15",
+    "scores": {
+      "matcher": 0.6296,
+      "classifier": 0.4828
+    }
+  },
+  "2026-08-14_10-46": {
+    "on": "2026-08-15",
+    "scores": {
+      "matcher": 0.6316,
+      "classifier": 0.8485
+    }
+  },
+  "2026-08-15_18-56_1": {
+    "on": "2026-08-15",
+    "scores": {
+      "matcher": 1,
+      "classifier": 0.6923
+    }
+  },
+  "2026-08-19_12-37": {
+    "on": "2026-08-19",
+    "scores": {
+      "matcher": 0.1667,
+      "classifier": 0.125
+    }
+  },
+  "2026-08-20_00-37": {
+    "on": "2026-08-19",
+    "scores": {
+      "matcher": 0.2041,
+      "classifier": 0.2083
+    }
+  },
+  "2026-08-20_00-44": {
+    "on": "2026-08-19",
+    "scores": {
+      "matcher": 0.8118,
+      "classifier": 0.8118
+    }
+  },
+  "2026-08-20_00-51": {
+    "on": "2026-08-19",
+    "scores": {
+      "matcher": 0.6759,
+      "classifier": 0.6718
+    }
+  },
+  "2026-08-20_01-14": {
+    "on": "2026-08-19",
+    "scores": {
+      "matcher": 1,
+      "classifier": 1
+    }
+  },
+  "2026-08-20_22-55-03": {
+    "on": "2026-08-20",
+    "scores": {
+      "classifier": 1
+    }
+  },
+  "2026-08-21_11-51-04": {
+    "on": "2026-08-22",
+    "scores": {
+      "classifier": 1
+    }
+  },
+  "compressed": {
+    "predates": true
+  },
+  "empty": {
+    "predates": true
+  },
+  "empty-with-coordinates": {
+    "predates": true
+  },
+  "has-label": {
+    "predates": true
+  },
+  "hoshi-sequence": {
+    "predates": true
+  },
+  "itb-01": {
+    "predates": true
+  },
+  "litfog-01": {
+    "predates": true
+  },
+  "litfog-02": {
+    "predates": true
+  },
+  "litfog-03": {
+    "predates": true
+  },
+  "litfog-04": {
+    "predates": true
+  },
+  "litfog-04b": {
+    "predates": true
+  },
+  "litfog-05": {
+    "predates": true
+  },
+  "opening-01": {
+    "predates": true
+  },
+  "otme-01": {
+    "predates": true
+  },
+  "otme-02": {
+    "predates": true
+  },
+  "photo-1": {
+    "on": "2026-08-22",
+    "scores": {
+      "classifier": 0
+    }
+  },
+  "photo-3": {
+    "on": "2026-08-22",
+    "scores": {
+      "classifier": 0
+    }
+  },
+  "photo-corner": {
+    "on": "2026-08-22",
+    "scores": {
+      "classifier": 0
+    }
+  },
+  "photo-rotated-blurry": {
+    "on": "2026-08-22",
+    "scores": {
+      "classifier": 0
+    }
+  },
+  "screenshot-editor": {
+    "on": "2026-08-22",
+    "scores": {
+      "classifier": 0.125
+    }
+  },
+  "sh-big": {
+    "on": "2026-08-19",
+    "scores": {
+      "matcher": 1,
+      "classifier": 1
+    }
+  },
+  "sh-smaller": {
+    "on": "2026-08-19",
+    "scores": {
+      "matcher": 0.8966,
+      "classifier": 0.8352
+    }
+  },
+  "some-diagram": {
+    "predates": true
+  },
+  "some-diagram-2": {
+    "predates": true
+  },
+  "synthetic-fullboard": {
+    "predates": true
+  },
+  "tengen": {
+    "predates": true
+  },
+  "tengen-white": {
+    "predates": true
+  },
+  "with-blue-border": {
+    "on": "2026-08-22",
+    "scores": {
+      "classifier": 0
+    }
+  },
+  "without-blue-border": {
+    "on": "2026-08-22",
+    "scores": {
+      "classifier": 1
+    }
+  }
+}
