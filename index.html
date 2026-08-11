@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>sgfcap — go diagram to SGF</title>
+    <script type="module" crossorigin src="./assets/index-C8chAdxY.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-X366wVA5.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>sgfcap</h1>
+        <p>Turn a diagram from a go book into an editable SGF. Nothing leaves your browser.</p>
+      </header>
+
+      <section id="intake">
+        <label id="dropzone" for="file">
+          <strong>Upload or paste an image</strong>
+          <span>Drop a diagram here, click to choose a file, or press <kbd>Ctrl</kbd>+<kbd>V</kbd></span>
+          <input id="file" type="file" accept="image/*" />
+        </label>
+      </section>
+
+      <p id="status" role="status" hidden></p>
+      <p id="error" role="alert" hidden></p>
+
+      <section id="result" hidden>
+        <div id="board"></div>
+        <aside>
+          <h2>Source image</h2>
+          <img id="source" alt="The diagram this board was read from" />
+          <div class="actions">
+            <button id="copy" type="button">Copy SGF</button>
+            <button id="reset" type="button">Use another image</button>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+  </body>
+</html>
