@@ -11,6 +11,30 @@
     -->
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="alternate icon" type="image/png" sizes="32x32" href="./favicon.png" />
+
+    <meta
+      name="description"
+      content="Turn a diagram from a go book into an editable SGF. Nothing leaves your browser."
+    />
+
+    <!--
+      Link previews, and the one place in this page that has to name where it is deployed.
+      Everything else loads relatively (see `base` in vite.config.ts) so the build runs from
+      any path, but a crawler resolves og:image against nothing and needs it absolute. If the
+      site moves, these four URLs are what to change.
+    -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="sgfcap" />
+    <meta
+      property="og:description"
+      content="Turn a diagram from a go book into an editable SGF. Nothing leaves your browser."
+    />
+    <meta property="og:url" content="https://fvictorio.github.io/sgfcap/" />
+    <meta property="og:image" content="https://fvictorio.github.io/sgfcap/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="A crosscut, beside the word sgfcap" />
+    <meta name="twitter:card" content="summary_large_image" />
     <script type="module" crossorigin src="./assets/index-Bh0MKVsL.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-BrM7IV2x.css">
   </head>
