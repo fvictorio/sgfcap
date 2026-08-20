@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="A crosscut">
+  <!--
+    A crosscut: two stones of each colour cutting through each other. It is the smallest
+    shape in go that could not be anything else — a single stone is a dot and two are a
+    domino, but four alternating around a point read as a board even at sixteen pixels,
+    which is the size this is really drawn for.
+
+    Grey rather than the app's browns because a favicon has to sit on whatever colour the
+    browser paints its tabs, in either theme, and grey is the one that never fights it.
+  -->
+  <defs>
+    <clipPath id="corner"><rect width="32" height="32" rx="4" /></clipPath>
+  </defs>
+  <g clip-path="url(#corner)">
+    <rect width="32" height="32" fill="#dedede" />
+    <!-- Run to the edge rather than stopping short: a diagram is a crop of a larger board. -->
+    <path d="M10.5 0v32M21.5 0v32M0 10.5h32M0 21.5h32" fill="none" stroke="#9a9a9a" stroke-width="1.6" />
+    <circle cx="10.5" cy="10.5" r="5.4" fill="#1a1a1a" />
+    <circle cx="21.5" cy="21.5" r="5.4" fill="#1a1a1a" />
+    <!-- Radius less half the rim, so the stroke's outer edge lands where the black ones do. -->
+    <circle cx="21.5" cy="10.5" r="4.825" fill="#fcfcfc" stroke="#3c3c3c" stroke-width="1.15" />
+    <circle cx="10.5" cy="21.5" r="4.825" fill="#fcfcfc" stroke="#3c3c3c" stroke-width="1.15" />
+  </g>
+</svg>

@@ -4,8 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>sgfcap — go diagram to SGF</title>
-    <script type="module" crossorigin src="./assets/index-1XFjpIHe.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-X366wVA5.css">
+
+    <!--
+      SVG first for anything that will take one, and a 32px raster behind it for Safari
+      older than 16.4. Declaring both stops the browser probing /favicon.ico as well.
+    -->
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="alternate icon" type="image/png" sizes="32x32" href="./favicon.png" />
+    <script type="module" crossorigin src="./assets/index-Bh0MKVsL.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BrM7IV2x.css">
   </head>
   <body>
     <main>
@@ -23,7 +30,22 @@
       </section>
 
       <p id="status" role="status" hidden></p>
-      <p id="error" role="alert" hidden></p>
+
+      <!--
+        The invitation to write in is markup rather than something the script builds, so the
+        address is declared once in each place it appears and there is no HTML being assembled
+        out of strings. The script only ever sets #error-detail's text and shows or hides the
+        offer, which does not apply to every failure — a clipboard permission is not a diagram
+        worth sending anyone.
+      -->
+      <p id="error" role="alert" hidden>
+        <span id="error-detail"></span>
+        <span id="error-offer">
+          If you think it should work, send it to
+          <a href="mailto:sgfcapture@gmail.com?subject=A%20diagram%20that%20should%20work">sgfcapture@gmail.com</a>
+          and I will take a look.
+        </span>
+      </p>
 
       <section id="result" hidden>
         <div id="board"></div>
@@ -37,6 +59,10 @@
         </aside>
       </section>
     </main>
+
+    <footer>
+      <a href="mailto:sgfcapture@gmail.com?subject=sgfcap">Contact</a>
+    </footer>
 
   </body>
 </html>
